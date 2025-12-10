@@ -22,6 +22,15 @@ public class Dp{
     }
 
     public int fib_tab(int n){
-        return 1;
+        if(n<=1){
+            return n;
+        }
+        int tb[] = new int[n+1];
+        tb[0] = 0;
+        tb[1] = 1;
+        for(int i = 2; i<tb.length; ++i){
+            tb[i] = tb[i-2]+tb[i-1];
+        }
+        return tb[n];
     }
 }
