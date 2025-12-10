@@ -10,7 +10,7 @@ public class Dp{
         return fibohelp(n, memo);
     }
 
-    public int fibohelp(int n, int memo[]){
+    private int fibohelp(int n, int memo[]){
         if(n<=1){
             return n;
         }
